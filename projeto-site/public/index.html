@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Together Tech</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- menu -->
+	<div class="wrapper">
+		<nav class="navbar">
+			<img class="logo" src="logotipo.png">
+			<ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="vagas.html">Vagas</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="Info.html">Info</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+		</nav>
+		<!-- menu -->
+
+		<!-- centro da pagina -->
+		<div class="center" style="display: block;" id="centerpg">
+			<h1>Together Tech</h1>
+			<h2>Seja você, seja feliz.</h2>
+			<div class="buttons">
+				<button onclick="saibamais ()" id="saibamore">Saiba mais</button>
+				<button onclick="contact ()" class="btn2" id="btn1">Contato</button>
+			</div>
+		</div>
+		<!-- centro da pagina -->
+
+		<!-- sobre together tech -->
+
+		<div class="info" style="display: none;" id="sobret">
+			<div class="container1">
+				<span>Fundada em novembro de 2020, pensando em inclusão e diversidade,
+					a Together Tech é um site onde pode-se encontrar vagas de emprego,
+					cursos e cartilhas para <h3>TODOS.</h3>Aqui, empresas também podem cadastrar suas vagas, dando
+					assim,
+					mais oportunidades para a comunidade Trans. <b>TRANS</b>FORME SEU AMBIENTE!</span>
+			</div>
+		</div>
+
+
+		<!-- fim sobre together tech -->
+
+		<!-- contact -->
+		<div class="contato" style="display: none;" id="contatoform">
+			<div class="formulario">
+				<div class="inputs">
+					<span class="entreemcontato">Para mais informações, entre em contato!</span>
+					<input type="text" class="input" placeholder="Nome" id="named">
+					<input type="text" class="input" placeholder="Email" id="mail">
+					<input type="text" class="input" placeholder="Assunto" id="assunto">
+				</div>
+				<div class="mensg">
+					<textarea placeholder="Mensagem"></textarea>
+					<div onclick="enviarmensagem()" class="btncontact" id="btn3">Enviar</div>
+				</div>
+			</div>
+		</div>
+		<!-- fim contact -->
+
+		<!-- saiba mais -->
+		<div class="card-saibamais" style="display: none;" id="saiba_mais">
+			<div class="sliders">
+				<label id="cd1" onclick="mais1()" for="" class="tap"></label>
+			</div>
+			<div class="partcard">
+				<label for="" class="img">
+					<img src="C:\Users\rosimeire\Desktop\Faculdade\Projeto individual\projeto-modelo-individual-1ads-202-main\projeto-site\public\img\1 (2).png">
+				</label>
+				<div class="content">
+					<span>Fundada em novembro de 2020</span>
+					<div class="titulo">Together Tech</div>
+					<div class="texto">A Together Tech, é um site sem fins lucrativos, onde empresas podem cadastrar
+						suas
+						vagas de emprego disponiveis e contribuirem para a diversidade e inclusão.</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card-saibamais2" style="display: none;" id="saiba_mais2">
+			<div class="sliders2">
+				<label id="cd22" onclick="mais2()" for="" class="tap" alt="Voltar ao inicio"></label>
+			</div>
+			<div class="partcard2">
+				<label for="" class="img">
+					<img src="C:\Users\rosimeire\Desktop\Faculdade\Projeto individual\projeto-modelo-individual-1ads-202-main\projeto-site\public\img\111.jpg">
+				</label>
+				<div class="content2">
+					<span>Fundada em novembro de 2020</span>
+					<div class="titulo">Vamos <b>TRANS</b>formar o mundo!</div>
+					<div class="texto">Para usúarios, a Together Tech oferece plataformas online com cursos gratuitos e
+						cartilhas contendo informações voltadas a população trans.</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+
+		<!-- fim saiba mais -->
+
+
+
+</body>
+
+</html>
+
+<script>
+	function saibamais() {
+		saiba = saibamore;
+		saiba = 0;
+		if (saiba++ == 0) {
+			centerpg.style = "display:none";
+			saiba_mais.style = "display:block";
+
+		}
+	}
+
+	function contact() {
+		botao1 = btn1;
+		botao1 = 0;
+		if (botao1++ == 0) {
+			centerpg.style = "display:none";
+			sobret.style = "display:none";
+			contatoform.style = "display:block";
+
+		}
+
+
+
+	}
+
+	function enviarmensagem() {
+		botao2 = btn3;
+		botao2 = 0;
+		if (named.value != '' && mail.value != '' && assunto.value != '' && botao2++ == 0) {
+			alert("Mensagem enviada!")
+			location.href = 'C:/Users/rosimeire/Desktop/Faculdade/Projeto individual/projeto-modelo-individual-1ads-202-main/projeto-site/public/index.html';
+		} else {
+			alert("Preencha os campos corretamente")
+
+		}
+
+	}
+	function saibamais() {
+		info = saibamore;
+		info = 0;
+		if (info++ == 0) {
+			saiba_mais.style = "display:block";
+			centerpg.style = "display:none";
+			sobret.style = "display:none";
+		}
+
+	}
+
+	function mais1() {
+		info2 = cd1;
+		info2 = 0;
+		if (info2++ == 0) {
+			saiba_mais.style = "display:none";
+			saiba_mais2.style = "display:block";
+			cd2.style = "display:none";
+		}
+
+	}
+
+	function mais2() {
+		info3 = cd22;
+		info3 = 0;
+		if (info3++ == 0) {
+			saiba_mais2.style = "display:none";
+			saiba_mais.style = "display:none";
+			location.href = 'C:/Users/rosimeire/Desktop/Faculdade/Projeto individual/projeto-modelo-individual-1ads-202-main/projeto-site/public/index.html';
+		}
+	}
+</script>

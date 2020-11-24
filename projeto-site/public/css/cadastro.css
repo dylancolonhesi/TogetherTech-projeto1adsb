@@ -1,0 +1,333 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(../img/2.png) no-repeat fixed;
+  height: 100vh;
+  -webkit-background-size:cover ;
+  -moz-background-size: cover ;
+  -o-background-size: cover ;
+  background-size: cover ;
+}
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+.navbar .logo {
+  width: 223px;
+  height: auto;
+  margin-top: -21px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background:  #00a1d7;
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	font-family: sans-serif;
+	user-select: none;
+}
+  /* cardCadastro e login empresas */
+.card1  {
+  float: left;
+    text-align: center;
+    padding-top: 23px;
+    padding-bottom: 264px;
+    width: 45%;
+    font-size: 15px;
+    height: 180px;
+    margin-top: 91px;
+    border-radius: 40px;
+    margin-left: 351px;
+    background: rgba(0, 0, 0, 0.4);
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.card4 {
+  float: left;
+  text-align: center;
+  padding-top: 23px;
+  padding-bottom: 280px;
+  width: 45%;
+  font-size: 15px;
+  height: 180px;
+  margin-top: 91px;
+  border-radius: 40px;
+  margin-left: 351px;
+  background: rgba(0, 0, 0, 0.4);
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.letras span{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 21px;
+  -webkit-text-stroke: plum;
+  -webkit-text-stroke-width: 1px;
+}
+ 
+.insira {
+  padding: 5px;
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  width: 162px;
+  height: 24px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 14px;
+}
+
+.insiraprim {
+  padding: 5px;
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  width: 162px;
+  height: 17px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 14px;
+  
+}
+
+.insira3 {
+  padding: 5px;
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  width: 162px;
+  height: 17px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 14px;
+  
+}
+
+.insira2 {
+
+  padding: 5px;
+  background-color: whitesmoke;
+  margin-left: 194px;
+  border-radius: 14px;
+   width: 162px;
+  height: 17px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.insira4 {
+
+  padding: 5px;
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  width: 162px;
+  height: 17px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 14px;
+}
+
+.insira5 {
+  padding: 5px;
+  background-color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  width: 162px;
+  height: 28px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 14px;
+
+
+}
+
+
+
+.botao{
+  height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color:white;
+	background:  #10b3e9;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #10b3e9;
+	border-radius: 25px;
+  transition: .4s;
+  margin-top: 31px;
+}
+
+.botao:hover {
+  background: #e05ec0;
+
+}
+
+.botao2 {
+  height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color:white;
+	background:  #10b3e9;
+	
+	cursor: pointer;
+	border: 1px solid #10b3e9;
+	border-radius: 25px;
+  transition: .4s;
+}
+
+.botao2:hover {
+  background: #e05ec0;
+}
+
+
+.botao3{
+  height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color:white;
+	background:  #10b3e9;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #10b3e9;
+	border-radius: 25px;
+  transition: .4s;
+  margin-left: 15px;
+}
+
+.botao3:hover {
+  background: #e05ec0;
+}
+
+
+h3 {
+  font-size: 44px;
+  text-align: center;
+  color:white;
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card2 {
+  float: left;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 161px;
+  width: 44%;
+  font-size: 15px;
+  height: 170px;
+  margin-top: 91px;
+  border-radius: 86px;
+  margin-left: 351px;
+  background-color: whitesmoke;
+}
+
+.letras2 span {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 21px;
+-webkit-text-stroke: plum;
+-webkit-text-stroke-width: 1px;
+}
+
+.letras5 span {
+  color: white;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 18px;
+
+}
+
+.empresas{
+color: white;
+font-size: 19px;
+
+
+}
+/* Fim cardCadastro e login e empresas*/
+
+/* esqueceu*/
+.cardesqueceu{
+  float: left;
+  text-align: center;
+  padding-top: 23px;
+  width: 45%;
+  font-size: 15px;
+  margin-top: 123px;
+  border-radius: 40px;
+  margin-left: 351px;
+  background: rgba(0, 0, 0, 0.4);
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 12px;
+}
+.letrasesq {
+  font-size: 44px;
+  text-align: center;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+.insira00{
+  padding: 5px;
+  background-color: whitesmoke;
+  margin-left: 200px;
+  font-family: 'Roboto', sans-serif;
+  width: 162px;
+  height: 28px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 14px;
+  margin-top: 38px;
+}
+
+.btnesq{
+  height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color:white;
+	background:  #10b3e9;
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #10b3e9;
+	border-radius: 25px;
+  transition: .4s;
+  margin-left: 209px;
+}
+
+.btnesq:hover {
+  background: #e05ec0;
+}
+
+.esqueceubtn {
+color: whitesmoke;
+text-decoration: none;
+}
+/* esqueceu*/
+
+

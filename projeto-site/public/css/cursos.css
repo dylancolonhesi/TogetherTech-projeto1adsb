@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(../img/cursospag.png) no-repeat fixed;
+  height: 100vh;
+  -webkit-background-size:cover ;
+  -moz-background-size: cover ;
+  -o-background-size: cover ;
+  background-size: cover ;
+}
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.4);
+}
+.navbar .logo {
+  width: 223px;
+  height: auto;
+  margin-top: -21px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background:  #00a1d7;
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	font-family: sans-serif;
+	user-select: none;
+}
+
+/* 1 Card cursos*/
+
+.content {
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   align-content: center;
+   width: 100%;
+   height: 100vh;
+   padding-left: 55px;
+}
+
+.card {
+  background: #FFF;
+  box-shadow: 0px 2px 18px #000;
+  border-radius: 3px;
+  width: 53%;
+  margin-left: 205px;
+}
+
+.mediacard {
+background: url("https://howchimp.com/wp-content/uploads/2020/07/codecademy-review.jpg") center/cover;
+height: 208px;
+width: 100%;
+}
+
+.topCard {
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.bottomcard {
+  padding: 20px;
+}
+
+.titulo a {
+  text-decoration: none;
+  color: black;
+  padding-left: 215px;
+  text-decoration: revert;
+}
+
+span.secundario {
+  margin-left: 192px;
+}
+
+/* fim 1 Card cursos*/
+
+/* 2 Card cursos*/
+.content2 {
+  display: flex;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-left: 55px;
+    margin-top: -133px;
+}
+
+.card2 {
+ background: #FFF;
+ box-shadow: 0px 2px 18px #000;
+ border-radius: 3px;
+ width: 53%;
+ margin-left: 205px;
+}
+
+.mediacard2 {
+background: url("https://www.galinhaprogramadora.com.br/wp-content/uploads/2019/06/logo_brasilmaisti.png") center/cover;
+height: 176px;
+width: 92%;
+}
+
+.topCard2 {
+ padding: 20px;
+ padding-top: 0px;
+}
+
+.bottomcard2 {
+ padding: 20px;
+}
+
+.titulo2 a {
+ text-decoration: none;
+ color: black;
+ padding-left: 215px;
+ text-decoration: revert;
+}
+
+span.secundario2 {
+margin-left: 106px
+}
+
+/* fim 2 Card cursos*/
+
+/* 3 Card cursos*/
+.content3 {
+  display: flex;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-left: 55px;
+    margin-top: -133px;
+}
+
+.card3 {
+ background: #FFF;
+ box-shadow: 0px 2px 18px #000;
+ border-radius: 3px;
+ width: 53%;
+ margin-left: 205px;
+}
+
+.mediacard3 {
+background: url("https://onetclub.com.br/wp-content/uploads/2020/04/veduca.png") center/cover;
+height: 208px;
+width: 100%;
+}
+
+.topCard3 {
+ padding: 20px;
+ padding-top: 0px;
+}
+
+.bottomcard3 {
+ padding: 20px;
+}
+
+.titulo3 a {
+ text-decoration: none;
+ color: black;
+ padding-left: 255px;
+ text-decoration: revert;
+}
+
+span.secundario3 {
+  margin-left: 169px
+}
+/* fim 3 Card cursos*/
+
+/* 4 Card cursos*/
+.content4 {
+  display: flex;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-left: 55px;
+    margin-top: -133px;
+}
+
+.card4 {
+ background: #FFF;
+ box-shadow: 0px 2px 18px #000;
+ border-radius: 3px;
+ width: 53%;
+ margin-left: 205px;
+}
+
+.mediacard4 {
+background: url("https://cdn.kastatic.org/images/khan-logo-dark-background-2.png") center/cover;
+height: 208px;
+width: 100%;
+}
+
+.topCard4 {
+ padding: 20px;
+ padding-top: 0px;
+}
+
+.bottomcard4 {
+ padding: 20px;
+}
+
+.titulo4 a {
+ text-decoration: none;
+ color: black;
+ padding-left: 195px;
+ text-decoration: revert;
+}
+
+span.secundario4 {
+  margin-left: 169px
+}
+/* Fim 4 Card cursos*/
+
+/* texto em cima*/
+.container {
+  width: 90%;
+  margin: 50px auto;
+  
+  }
+  
+  .meio {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 50px;
+  color: black;
+  }
+
+/* texto em cima*/
+

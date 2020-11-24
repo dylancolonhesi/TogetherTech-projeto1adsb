@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Together Tech</title>
+    <link rel="stylesheet" href="css/cursos.css">
+</head>
+<script type="text/javascript" src="funcoes.js"></script>
+</head>
+<script>
+
+    let usuario;
+
+    verificar_autenticacao();
+
+    
+</script>
+<body onload="verificar_autenticacao()">
+    <!-- menu -->
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class="logo" src="logotipo.png">
+            <ul>
+                <ul>
+                    <li>Olá, <b id="b_usuario"></b></li>
+                    <li><a href="" onclick="logoff()">LOGOUT</a></li>
+                </ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="vagas.html">Vagas</a></li>
+                <li><a class="active" href="cursos.html">Cursos</a></li>
+                <li><a href="Info.html">Info</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <!-- menu -->
+
+        <!-- cards dos cursos  -->
+        <div class="container">
+			<div class="meio">
+				<br>
+				<h1>Cursos</h1>
+				<span>Insituições online e gratuitas que oferecem cursos de tecnologia, gestão e em diversas áreas. Clique no nome sublinhado e você sera direcionado a página da instituição.
+				</span>
+			</div>
+
+
+        <div class="content">
+            <div class="card">
+              <div class="topCard">
+               <h2 class="titulo"><a href="https://www.codecademy.com/">Codeacademy</h2></a>
+               <span class="secundario">Aulas de codificação gratuitas.</span>
+              </div>
+             <div class="mediacard"></div>
+             <div class="bottomcard">
+             <span class="bottomtext">Oferece cursos gratuitos voltados para linguagens de programação, como: JS, Python, PHP e entre outros.
+             </span>
+             </div>
+            </div>
+        </div>
+
+        <div class="content2">
+            <div class="card2">
+              <div class="topCard2">
+               <h2 class="titulo2"><a href="http://www.brasilmaisdigital.org.br/index.php/pt-br/">Brasil mais TI</h2></a>
+               <span class="secundario2">Cursos livres de capacitação em tecnologia da informação. </span>
+              </div>
+             <div class="mediacard2"></div>
+             <div class="bottomcard2">
+             <span class="bottomtext2">Oferece cursos livres de capacitação em tecnologia da informação. 
+                 Estão disponíveis 30 cursos gratuitos na modalidade a distância, que oferecem mais 
+                 de 1500 horas de qualificação.
+             </span>
+             </div>
+            </div>
+        </div>
+
+        <div class="content3">
+            <div class="card3">
+              <div class="topCard3">
+               <h2 class="titulo3"><a href="https://play.veduca.org/cursos/gratuitos">Veduca</h2></a>
+               <span class="secundario3">Plataforma de educação a distância.</span>
+              </div>
+             <div class="mediacard3"></div>
+             <div class="bottomcard3">
+             <span class="bottomtext3">Conta com mais de 800 mil usuários e 19 cursos feitos com instituições parceiras de ensino, como B3 e USP.
+             </span>
+             </div>
+            </div>
+        </div>
+
+        <div class="content4">
+            <div class="card4">
+              <div class="topCard4">
+               <h2 class="titulo4"><a href="https://pt.khanacademy.org/">Khan Academy</h2></a>
+               <span class="secundario4">Organização sem fins lucrativos.</span>
+              </div>
+             <div class="mediacard4"></div>
+             <div class="bottomcard4">
+             <span class="bottomtext4">Oferece uma coleção grátis de vídeos de matemática, medicina e saúde, economia e finanças, física, química, biologia, ciência da computação, entre outras matérias.
+             </span>
+             </div>
+            </div>
+        </div>
+        <!-- cards dos cursos -->
+</body>
+
+</html>

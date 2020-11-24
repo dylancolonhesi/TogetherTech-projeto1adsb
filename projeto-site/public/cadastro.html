@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Together Tech</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+
+</head>
+
+<body>
+    <!-- menu -->
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class="logo"
+                src="logotipo.png">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="cadastro.html">Cadastro</a></li>
+                    <li><a href="vagas.html">Vagas</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="Info.html">Info</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+        </nav>
+        <!-- menu -->
+
+        <!-- Cadastro -->
+        <div class="card1" id="cadastrousuario">
+            <div class="letras">
+                <h3>Cadastre-se! </h3>
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                    <span>Nome:</span>
+                    <br>
+                    <input class="insiraprim" type="text" name="nome" required minlength="4"><br>
+                    <br>
+                    <span>Usuário:</span>
+                    <br>
+                    <input class="insira4" type="text" name="login" required minlength="4"><br>
+                    <br>
+                    <span>Senha:</span>
+                    <br>
+                    <input class="insira3" type="password" name="senha" required minlength="4"><br>
+                    <br>
+                    <button id="jobs1" onclick="job()" class="botao3">Para empresas</button>
+                    <button class="botao" id="btn_entrar">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+        <!-- Cadastro -->
+
+        <div class="card4" style="display: none;" id="cardempresa9">
+            <div class="empresas">
+                <h3>Cadastre sua empresa:</h3>
+                <span>Nome da empresa:</span><br>
+                <input id="cardempresa3" type="text" class="insira" placeholder="Nome da sua empresa"><br>
+                <br>
+                <span>Vaga:</span><br>
+                <input id="cardempresa4" type="text" class="insira" placeholder="Analista de sistemas"><br>
+                <br>
+                <span>Contato: </span> <br>
+                <input id="cardempresa5" type="text" class="insira" placeholder="email@email.com.br"><br>
+                <br>
+                <span>Localização: </span> <br>
+                <input id="cardempresa6" type="text" class="insira" placeholder="São Paulo-SP">
+                <br>
+                <button onclick="cadastrarvaga()" class="botao">Cadastrar vaga</button><br>
+            </div>
+        </div>
+
+        <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
+            Erro no cadastro
+        </div>
+
+</body>
+
+</html>
+<script>
+
+    function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+
+            if (response.ok) {
+
+                window.location.href = 'login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        div_erro.style.display = 'none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        div_erro.style.display = 'block';
+    }
+
+    function job() {
+        var jobs1 = 0;
+        if (jobs1++ == 0) {
+            alert("cadastre a vaga disponivel")
+            cardempresa9.style = "display:block";
+            cadastrousuario.style = "display:none";
+        }
+    }
+
+    function cadastrarvaga() {
+        var vagasdeemprego = {
+            campo1: (cardempresa3.value),
+            campo2: (cardempresa4.value),
+            campo3: (cardempresa5.value),
+            campo4: (cardempresa6.value)
+        };
+        if (vagasdeemprego == "") {
+            if (vagasdeemprego != "") {
+                cardempresa3.value= '';
+                cardempresa4.value= '';
+                cardempresa5.value= '';
+                cardempresa6.value= '';
+                location.href = 'C:/Users/rosimeire/Desktop/Faculdade/Projeto individual/projeto-modelo-individual-1ads-202-main/projeto-site/public/vagas.html';
+
+            }
+        }
+        alert("Preencha todos os campos corretamente!");
+    }
+</script>

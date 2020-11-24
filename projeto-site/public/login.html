@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Together Tech</title>
+    <link rel="stylesheet"
+        href="css\cadastro.css">
+
+</head>
+
+<body>
+
+    <!-- menu -->
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class="logo"
+                src="logotipo.png">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="vagas.html">Vagas</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="Info.html">Info</a></li>
+                <li><a class="active" href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <!-- menu -->
+
+        <!--login -->
+        <div id="background" class="card1">
+            <div class="letras5">
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    <h3>Login:</h3><br>
+                    <span> Usuário: </span>
+                    <br>
+                    <input class="insira5" type="text" name="login"><br>
+                    <br>
+                    <span>Senha:</span>
+                    <br>
+                    <input class="insira5" type="password" name="senha"><br>
+                    <br>
+                    <button class="botao2" id="btn_entrar">Entrar</button>
+                </form>
+            </div>
+        </div>
+        <!--login -->
+        
+
+
+</body>
+
+</html>
+<script>
+
+function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.usuario;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'cursos.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+  
+    function aguardar() {
+        btn_entrar.disabled = true;
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;   
+    }
+
+</script>
+
+</html>

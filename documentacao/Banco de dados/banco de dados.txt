@@ -1,0 +1,22 @@
+tabela empresa com 
+idEmpresa
+nome da empresa 
+tipo_vaga
+qntdVagas
+fkEnd_contato int,
+foreing key
+
+
+
+tabel end_contato
+idendereço
+endereço
+contato
+
+tabela usuário 
+nome
+email 
+senha 
+
+
+uma empresa possue 1 ou mais end_contato e 1 end_contato possue 1 ou mais empresas
