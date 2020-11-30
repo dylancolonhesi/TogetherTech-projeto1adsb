@@ -47,8 +47,6 @@
             </div>
         </div>
         <!--login -->
-        
-
 
 </body>
 
@@ -75,7 +73,7 @@ function entrar() {
 
             } else {
 
-                console.log('Erro de login!');
+                alert('Erro de login!');
 
                 resposta.text().then(texto => {
                     console.error(texto);
@@ -95,6 +93,7 @@ function entrar() {
     function finalizar_aguardar(resposta) {
         btn_entrar.disabled = false;   
     }
+
 
 </script>
 

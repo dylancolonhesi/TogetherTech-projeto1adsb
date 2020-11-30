@@ -296,7 +296,6 @@ font-size: 19px;
 .insira00{
   padding: 5px;
   background-color: whitesmoke;
-  margin-left: 200px;
   font-family: 'Roboto', sans-serif;
   width: 162px;
   height: 28px;
@@ -317,7 +316,6 @@ font-size: 19px;
 	border: 1px solid #10b3e9;
 	border-radius: 25px;
   transition: .4s;
-  margin-left: 209px;
 }
 
 .btnesq:hover {

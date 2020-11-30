@@ -14,16 +14,15 @@
     <!-- menu -->
     <div class="wrapper">
         <nav class="navbar">
-            <img class="logo"
-                src="logotipo.png">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="cadastro.html">Cadastro</a></li>
-                    <li><a href="vagas.html">Vagas</a></li>
-                    <li><a href="cursos.html">Cursos</a></li>
-                    <li><a href="Info.html">Info</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
+            <img class="logo" src="logotipo.png">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="cadastro.html">Cadastro</a></li>
+                <li><a href="vagas.html">Vagas</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="Info.html">Info</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
         </nav>
         <!-- menu -->
 
@@ -124,22 +123,15 @@
     }
 
     function cadastrarvaga() {
-        var vagasdeemprego = {
-            campo1: (cardempresa3.value),
-            campo2: (cardempresa4.value),
-            campo3: (cardempresa5.value),
-            campo4: (cardempresa6.value)
-        };
-        if (vagasdeemprego == "") {
-            if (vagasdeemprego != "") {
-                cardempresa3.value= '';
-                cardempresa4.value= '';
-                cardempresa5.value= '';
-                cardempresa6.value= '';
-                location.href = 'C:/Users/rosimeire/Desktop/Faculdade/Projeto individual/projeto-modelo-individual-1ads-202-main/projeto-site/public/vagas.html';
-
-            }
+        var info_empresas = cardempresa3.value && cardempresa4.value && cardempresa5.value && cardempresa6.value;
+        if (info_empresas) {
+            cardempresa3.value = '';
+            cardempresa4.value = '';
+            cardempresa5.value = '';
+            cardempresa6.value = '';
+            window.location.href = 'vagas.html';
+        } else if (!info_empresas) {
+            alert("Por favor, preencha os campos corretamente.");
         }
-        alert("Preencha todos os campos corretamente!");
     }
 </script>
